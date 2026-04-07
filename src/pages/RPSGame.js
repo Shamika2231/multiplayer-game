@@ -29,8 +29,7 @@ export default function RPSGame() {
   const [timeLeft, setTimeLeft] = useState(15);
   const [gameOverPlayed, setGameOverPlayed] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
-  // eslint-disable-next-line no-unused-vars
-const revealAnim = useRef(null);
+  
   const winSound = useRef(null);
   const clickSound = useRef(null);
   const gameOverSound = useRef(null);
