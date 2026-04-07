@@ -29,7 +29,8 @@ export default function RPSGame() {
   const [timeLeft, setTimeLeft] = useState(15);
   const [gameOverPlayed, setGameOverPlayed] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
-  const [revealAnim, setRevealAnim] = useState(false);
+  //
+  const revealAnim = useref(null);
 
   const winSound = useRef(null);
   const clickSound = useRef(null);
