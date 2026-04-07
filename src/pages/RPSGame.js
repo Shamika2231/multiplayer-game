@@ -59,7 +59,7 @@ export default function RPSGame() {
     setTimeLeft(15);
     setGameOverPlayed(false);
     setShowConfetti(false);
-    setRevealAnim(false);
+    
   }, [roomId, round]);
 
   useEffect(() => {
@@ -83,7 +83,7 @@ export default function RPSGame() {
       result: winnerName === "Draw" ? "Draw!" : `Winner: ${winnerName}`,
       players: updated,
     });
-    setRevealAnim(true);
+    
     if (winnerName !== "Draw" && winnerName === name) {
       playSound(winSound);
       setShowConfetti(true);
